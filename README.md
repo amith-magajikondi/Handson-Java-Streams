@@ -53,7 +53,7 @@ Below is the definitive index of all 25 challenges included within this playgrou
 ---
 
 ## 💡 Instant Verification / Peek at Solutions
-If you want to instantly run the provided solution variations directly inside your execution tests, you can skip the placeholder method by prepending the static Solutions reference class to whatever function is being called in main.
+If you want to instantly run the provided solution variations directly inside your execution tests, you can skip the placeholder method by prepending the static `Solutions` reference class to whatever function is being called in `main`.
 
 For example, swap out the local call for the completed static version:
 
