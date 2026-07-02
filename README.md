@@ -51,3 +51,13 @@ Below is the definitive index of all 25 challenges included within this playgrou
 * **Problem 25:** Given orders with line items, compute total revenue per customer using `groupingBy` + `flatMap`
 
 ---
+
+## 💡 Instant Verification / Peek at Solutions
+If you want to instantly run the provided solution variations directly inside your execution tests, you can skip the placeholder method by prepending the static Solutions reference class to whatever function is being called in main.
+
+For example, swap out the local call for the completed static version:
+
+```
+// Route execution straight to the completed solution block:
+List<String> result = Solutions.getHighEarnersSortedBySalary(employees);
+```
