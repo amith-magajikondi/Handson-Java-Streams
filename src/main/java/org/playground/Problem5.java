@@ -22,14 +22,14 @@ public class Problem5 {
                 Arrays.asList("Python", "Go")
         );
 
-        List<String> result5 = flattenAndRemoveDuplicates(nestedList);
+        List<String> result = flattenAndRemoveDuplicates(nestedList);
         List<String> expected = Arrays.asList("Java", "Python", "C++", "JavaScript", "Ruby", "Go");
 
         System.out.println("\n--- Problem 5 Test ---");
         System.out.println("Expected: " + expected);
-        System.out.println("Actual:   " + result5);
+        System.out.println("Actual:   " + result);
 
-        if (result5 != null && result5.size() == expected.size() && result5.containsAll(expected)) {
+        if (result != null && result.size() == expected.size() && result.containsAll(expected)) {
             System.out.println("✅ Test Passed!");
         } else {
             System.out.println("❌ Test Failed.");

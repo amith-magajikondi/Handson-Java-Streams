@@ -38,12 +38,12 @@ public class Problem4 {
                 new Student("Tyke", 30)
         );
 
-        Map<Boolean, List<Student>> result4 = partitionStudentsByPassFail(students);
+        Map<Boolean, List<Student>> result = partitionStudentsByPassFail(students);
 
         System.out.println("\n--- Problem 4 Test ---");
-        if (result4 != null &&
-                result4.get(true).stream().anyMatch(s -> s.getName().equals("Tom")) &&
-                result4.get(false).stream().anyMatch(s -> s.getName().equals("Jerry"))) {
+        if (result != null &&
+                result.get(true).stream().anyMatch(s -> s.getName().equals("Tom")) &&
+                result.get(false).stream().anyMatch(s -> s.getName().equals("Jerry"))) {
             System.out.println("✅ Test Passed!");
         } else {
             System.out.println("❌ Test Failed.");

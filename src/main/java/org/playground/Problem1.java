@@ -1,10 +1,7 @@
 package org.playground;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Problem 1: Find names of employees earning above 50,000 sorted by salary descending.

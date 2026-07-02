@@ -50,17 +50,17 @@ public class Problem3 {
         );
 
         // --- Problem 3 Test ---
-        Map<String, Employee> result3 = Solutions.getHighestPaidByDepartment(employees);
+        Map<String, Employee> result = Solutions.getHighestPaidByDepartment(employees);
 
         System.out.println("\n--- Problem 3 Test ---");
-        if (result3 != null &&
-                result3.get("IT").getName().equals("Frank") &&
-                result3.get("HR").getName().equals("Bob") &&
-                result3.get("Finance").getName().equals("David")) {
+        if (result != null &&
+                result.get("IT").getName().equals("Frank") &&
+                result.get("HR").getName().equals("Bob") &&
+                result.get("Finance").getName().equals("David")) {
             System.out.println("✅ Test Passed!");
         } else {
             System.out.println("❌ Test Failed. Output: " +
-                    (result3 != null ? result3.entrySet().stream()
+                    (result != null ? result.entrySet().stream()
                             .collect(Collectors.toMap(Map.Entry<String, Employee>::getKey, e -> e.getValue().getName())) : "null"));
         }
     }

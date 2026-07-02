@@ -1,7 +1,6 @@
 package org.playground;
 
 import java.util.*;
-import java.util.stream.*;
 
 /**
  * Problem 2: Group employees by department and count each group.
@@ -42,14 +41,14 @@ public class Problem2 {
         );
 
         // --- Problem 2 Test ---
-        Map<String, Long> result2 = countEmployeesByDepartment(employees);
-        Map<String, Long> expected2 = Map.of("IT", 3L, "HR", 2L, "Finance", 1L);
+        Map<String, Long> result = countEmployeesByDepartment(employees);
+        Map<String, Long> expected = Map.of("IT", 3L, "HR", 2L, "Finance", 1L);
 
         System.out.println("\n--- Problem 2 Test ---");
-        System.out.println("Expected: " + expected2);
-        System.out.println("Actual:   " + result2);
+        System.out.println("Expected: " + expected);
+        System.out.println("Actual:   " + result);
 
-        if (expected2.equals(result2)) {
+        if (expected.equals(result)) {
             System.out.println("✅ Test Passed!");
         } else {
             System.out.println("❌ Test Failed.");
